@@ -8,7 +8,6 @@
         list: return answer
 */
 List func(List list1, int i) {
-  
   return [list1[i]];
 }
 void main() {
