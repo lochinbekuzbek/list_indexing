@@ -9,9 +9,8 @@
 */
 List func(List list1, int i) {
   int a = list1[i];
-  return [i];
+  return [a];
 }
-
 void main() {
   print(func([1, 3, 5, 6, 3, 4, 6], 3));
 }
