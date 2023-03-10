@@ -9,7 +9,7 @@
 List func(List list1) {
   int a = list1.length;
   int b = 0;
-  String s = 'true';
+  String s = 'True';
   while (b < a) {
     if (list1[b] == 0) {
       list1[b] = s;
