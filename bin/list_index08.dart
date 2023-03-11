@@ -11,9 +11,9 @@ List func(List list1) {
   int b = 0;
   while (b < a) {
     if (list1[b] == 1) {
-      list1[b] = 'False';
+      list1[b] = false;
     } else {
-      list1[b] = 'True';
+      list1[b] = true;
     }
     b++;
   }
