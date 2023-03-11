@@ -12,7 +12,7 @@ List func(List list1) {
   int b = 0;
   String s = 'False';
   while (b < a) {
-    if (list1[b] == 1) {
+    if (list1[b] == 0) {
       list1[b] = s;
     }
     b++;
@@ -21,5 +21,5 @@ List func(List list1) {
 }
 
 void main() {
-  print(func([1, 0, 0, 0, 1]));
+  print(func([1, 0, 0, 0, 0]));
 }
