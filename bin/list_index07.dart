@@ -8,18 +8,19 @@
 */
 // */
 List func(List list1) {
-  int a = list1.length;
   int b = 0;
-  String s = 'False';
-  while (b < a) {
+  while (b < list1.length) {
     if (list1[b] == 0) {
-      list1[b] = s;
+      list1[b] =false;
+  b += 1;
+    } else {
+      b += 1;
     }
-    b++;
   }
   return list1;
 }
+ 
+  void main() {
+    print(func([1, 0, 0, 0, 0]));
+  }
 
-void main() {
-  print(func([1, 0, 0, 0, 0]));
-}
