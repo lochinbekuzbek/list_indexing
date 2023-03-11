@@ -7,18 +7,19 @@
         list: return answer
 */
 List func(List list1) {
-  int a = list1.length;
   int b = 0;
-  String s = 'True';
-  while (b < a) {
-    if (list1[b] == 1) {
-      list1[b] = s;
+  while (b < list1.length) {
+    if (list1[b] > 1) {
+      list1[b] = true;
+
+      b += 1;
+    } else {
+      b += 1;
     }
-    b++;
   }
   return list1;
 }
+  void main() {
+    print(func([1, 0, 1, 1, 0]));
+  }
 
-void main() {
-  print(func([1, 0, 1, 1, 0]));
-}
