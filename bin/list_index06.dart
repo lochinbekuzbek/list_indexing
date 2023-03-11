@@ -11,7 +11,7 @@ List func(List list1) {
   int b = 0;
   String s = 'True';
   while (b < a) {
-    if (list1[b] == 0) {
+    if (list1[b] == 1) {
       list1[b] = s;
     }
     b++;
