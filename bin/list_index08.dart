@@ -9,14 +9,11 @@
 List func(List list1) {
   int a = list1.length;
   int b = 0;
-  int i = 0;
-  String s = 'False';
-  String c = 'True';
   while (b < a) {
     if (list1[b] == 1) {
-      list1[b] = c;
+      list1[b] = 'False';
     } else {
-      list1[b] = s;
+      list1[b] = 'True';
     }
     b++;
   }
